@@ -91,6 +91,7 @@ public class UserController {
 
     @DeleteMapping("/users/{id}")
     public Integer deleteUser(@PathVariable int id){
+        System.out.println("");
         return userMapper.deleteById(id);
     }
 
